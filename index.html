@@ -6,31 +6,42 @@
   <link rel="stylesheet" href="css/font-awesome.min.css">
 
   <style type="text/css">
+    #player {
+      width: 800px;
+      height: 600px;
+    }
+    .video-container{
+      width: 100%;
+      height: 100%
+    }
     .player-buttons {
-        background-color:black;
+      background-color:black;
     }
     .player-button {
-        border-style: none;
-        cursor: pointer;
-        color: white;
-        background-color: transparent;
-        margin: 5px;
+      border-style: none;
+      cursor: pointer;
+      color: white;
+      background-color: transparent;
+      margin: 5px;
     }
   </style>
   
 <body>
     
-    <div id="player" style="width: 800px; height: 600px; ">
-        <div class="js-video-container" style="width: 100%; height: 100%"></div>
-        <!-- Here can be placed player controls: play and volume buttons -->
-        <div class="player-buttons">
-            <button class="js-play-button player-button">
-                <i class="fa fa-play"></i>
-            </button>
-            <button class="js-pause-button player-button" hidden>
-              <i class="fa fa-pause"></i>
-          </button>
-        </div>
+    <div id="player">
+      <div class="js-video-container video-container"></div>
+
+      <div class="player-buttons">
+        
+        <button class="js-play-button player-button">
+          <i class="fa fa-play"></i>
+        </button>
+
+        <button class="js-pause-button player-button" hidden>
+          <i class="fa fa-pause"></i>
+        </button>
+        
+      </div>
     </div>
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
