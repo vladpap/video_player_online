@@ -3,6 +3,7 @@
 # Видеоплеер
 
 ## Прототип плейера для сайта
+<img src="screenshot.png" alt="Скриншот плейера">
 
 [Документация плеера](https://github.com/devmanorg/video-player-jslib "JavaScript-библиотека, которая проигрывает видео в браузере")
 
