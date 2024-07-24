@@ -19,7 +19,8 @@
     }
     .player-buttons {
       background-color:black;
-      padding-left: 20px;
+      padding: 0 10px;
+      display: flex;
     }
     .player-button {
       border-style: none;
@@ -28,6 +29,9 @@
       background-color: transparent;
       padding: 5px 10px;
       font-size: 150%;
+    }
+    .elastic {
+      flex-grow: 1;
     }
   </style>
   
@@ -46,12 +50,18 @@
           <i class="fa fa-pause"></i>
         </button>
 
-        <button class="js-mute-button player-button" hidden>
+        <button class="js-mute-button player-button">
           <i class="fa fa-volume-up" aria-hidden="true"></i>
         </button>
 
         <button class="js-volume-button player-button" hidden>
           <i class="fa fa-volume-off" aria-hidden="true"></i>
+        </button>
+
+        <div class="elastic"></div>
+
+        <button class="js-fullscreen-button player-button">
+          <i class="fa fa-expand" aria-hidden="true"></i>
         </button>
 
       </div>
