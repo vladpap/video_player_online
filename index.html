@@ -22,16 +22,19 @@
       background-color:black;
       padding: 0 10px;
       display: flex;
+      align-items: center;
     }
     .player-button {
       border-style: none;
       cursor: pointer;
       color: white;
       background-color: transparent;
-      padding: 5px 10px;
-      font-size: 150%;
+      font-size: 20px;
+      width: 35px;
+      height: 35px;
+      flex-shrink: 0;
     }
-    .elastic {
+    .player-progress-bar {
       flex-grow: 1;
     }
   </style>
@@ -59,7 +62,7 @@
           <i class="fa fa-volume-off" aria-hidden="true"></i>
         </button>
 
-        <div class="elastic"></div>
+        <div class="player-progress-bar"></div>
 
         <button class="js-fullscreen-button player-button">
           <i class="fa fa-expand" aria-hidden="true"></i>
