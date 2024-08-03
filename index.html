@@ -53,7 +53,7 @@
     }
     .player-progress-slider {
       justify-content: center;
-      background-color: red;
+      background-color: #f8104d;
       height: 5px;
       border-radius: 3px;
     }
@@ -66,13 +66,23 @@
     .dot {
       height: 8px;
       width: 8px;
-      background-color: red;
+      background-color: #f8104d;
       border-radius: 50%;
       margin-left: -8px;
       margin-top: -4px;
       border-style: solid;
       border-width: 3px;
       border-color: white;
+      transition-duration: 5ms;
+      transition-property: opacity;
+      transition-timing-function: ease-in-out;
+      opacity: 0;
+    }
+    .player-buttons:hover .dot {
+      transition-duration: 5ms;
+      transition-property: opacity;
+      transition-timing-function: ease-in-out;
+      opacity: 1;
     }
   </style>
   
