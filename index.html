@@ -5,6 +5,7 @@
   <link rel="icon" href="favicon.ico">
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
   <style type="text/css">
     .player {
@@ -34,8 +35,23 @@
       height: 40px;
       flex-shrink: 0;
     }
+    .viewing-panel {
+      flex-grow: 1;
+      color: white;
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      display: flex;
+      align-items: center;
+    }
     .player-progress-bar {
       flex-grow: 1;
+    }
+    .video-current-time {
+
+    }
+    .video-duration {
+
     }
   </style>
   
@@ -62,7 +78,21 @@
           <i class="fa fa-volume-off" aria-hidden="true"></i>
         </button>
 
-        <div class="player-progress-bar"></div>
+        <div class="viewing-panel">
+
+          <div class="video-current-time">
+            <span class="js-current-time"></span>
+          </div>
+
+          <div class="player-progress-bar">
+
+          </div>
+
+          <div class="video-duration">
+            <span class="js-duration"></span>
+          </div>
+      
+        </div>
 
         <button class="js-fullscreen-button player-button">
           <i class="fa fa-expand" aria-hidden="true"></i>
